@@ -1,0 +1,45 @@
+body{
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-content: center;
+  margin: 150px;
+}
+
+
+.ball1 {
+  width: 80px;
+  height: 80px;
+  background-color: pink;
+  border-style: solid;
+  border-color: green;
+  border-radius: 100px;
+  animation: bounce 1s infinite alternate ease-in-out;
+}
+
+.ball2 {
+  width: 80px;
+  height: 80px;
+  background-color: blue;
+  border-radius: 100px;
+  animation: bounce 1s infinite ease-in-out;
+}
+
+.ball3 {
+  width: 80px;
+  height: 80px;
+  background-color: purple;
+  border-radius: 100px;
+  animation: bounce 6s linear; 
+}
+
+/* bounce anim */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-200px);
+  }
+}
